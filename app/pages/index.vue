@@ -5,7 +5,7 @@
         <div class="container mx-auto px-4">
           <nav class="flex justify-between items-center">
             <NuxtLink to="/" class="text-white font-bold text-xl">
-              Eco-Bennes
+              TD Location de bennes 37
             </NuxtLink>
             <div class="hidden md:flex space-x-6">
               <NuxtLink v-for="(item, i) in navigationItems" :key="i" :to="item.to" class="text-white hover:text-yellow-300 transition-colors">
@@ -42,7 +42,7 @@
       <div class="container mx-auto px-4">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 class="text-lg font-bold mb-4">Eco-Bennes</h3>
+            <h3 class="text-lg font-bold mb-4">TD Location de bennes 37</h3>
             <p class="text-gray-400">
               Location de bennes et solutions de gestion des déchets pour particuliers et professionnels.
             </p>
@@ -86,7 +86,7 @@
           </div>
         </div>
         <div class="mt-8 pt-8 border-t border-gray-800 text-center text-gray-500">
-          <p>© {{ new Date().getFullYear() }} Eco-Bennes. Tous droits réservés.</p>
+          <p>© {{ new Date().getFullYear() }} TD location de bennes 37. Tous droits réservés.</p>
         </div>
       </div>
     </footer>
