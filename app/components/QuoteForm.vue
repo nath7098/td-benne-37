@@ -17,11 +17,11 @@
             <div class="col-span-3 p-8 lg:p-10">
               <UForm :state="form" @submit.prevent="submitForm" class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <!-- Progression du formulaire -->
-                <UProgress v-model="formProgress" :max="5" class="col-span-1 md:col-span-2" />
+                <UProgress v-model="formProgress" :max="6" class="col-span-1 md:col-span-2" />
 
                 <!-- Informations personnelles -->
 
-                <UFormField label="Nom" name="lastName">
+                <UFormField label="Nom *" name="lastName">
                   <UInput v-model="form.lastName" placeholder="Votre nom"
                     class="w-full border-gray-300 focus:border-yellow-500 focus:ring focus:ring-yellow-200" />
                 </UFormField>
@@ -73,7 +73,7 @@
                 </UFormField>
 
                 <!-- Date souhaitée -->
-                <UFormField label="Date souhaitée" name="date" class="col-span-1 md:col-span-2">
+                <UFormField label="Date souhaitée (approximative) *" name="date" class="col-span-1 md:col-span-2">
                   <UInput v-model="form.date" type="date"
                     class="w-full border-gray-300 focus:border-yellow-500 focus:ring focus:ring-yellow-200" />
                 </UFormField>
@@ -168,6 +168,7 @@
 <script setup>
 import { ref, computed, watch } from 'vue';
 import { useContact } from '~/composables/useContact';
+import emailjs from 'emailjs-com';
 
 const contact = useContact();
 const toast = useToast();
@@ -201,6 +202,7 @@ const formProgress = computed(() => {
   let filled = 0;
 
   if (form.value.firstName) filled++;
+  if (form.value.lastName) filled++;
   if (form.value.phone) filled++;
   if (form.value.email) filled++;
   if (form.value.binType) filled++;
@@ -212,13 +214,14 @@ const formProgress = computed(() => {
 // Validation du formulaire
 const isFormValid = computed(() => {
   return form.value.firstName &&
+    form.value.lastName &&
     form.value.phone &&
     form.value.email &&
     form.value.binType &&
     form.value.address;
 });
 
-const submitForm = () => {
+const submitForm = async () => {
   if (!isFormValid.value) {
     alert("Veuillez remplir tous les champs obligatoires.");
     return;
@@ -226,12 +229,17 @@ const submitForm = () => {
 
   isSubmitting.value = true;
 
-  // Simulation d'envoi de formulaire
-  setTimeout(() => {
-    isSubmitting.value = false;
-    formSubmitted.value = true;
+  try {
+    const responseStatus = await emailjs.send('service_9sip9sp', 'template_td_benne_37', form.value, 'user_W3AFP2shDIAiHW0MFhaPv');
+    console.log(responseStatus);
+    toast.add({
+      color: 'success',
+      duration: 5000,
+      icon: 'i-heroicons-check-circle',
+      title: 'Demande envoyée avec succès !',
+      description: `Merci pour votre demande. Nous allons l'étudier et vous recontacterons dans les plus brefs délais.`
+    });
 
-    // Réinitialisation du formulaire
     form.value = {
       firstName: '',
       lastName: '',
@@ -244,19 +252,19 @@ const submitForm = () => {
       message: ''
     };
 
+  } catch (error) {
+    console.log(error)
     toast.add({
-      color: 'success',
-      duration: 500,
-      icon: 'i-heroicons-check-circle',
-      title: 'Demande envoyée avec succès !',
-      description: `Merci pour votre demande. Nous allons l'étudier et vous recontacterons dans les plus brefs délais.`
-    })
-
-    // Scroll vers le message de confirmation
-    setTimeout(() => {
-      window.scrollBy({ top: 100, behavior: 'smooth' });
-    }, 100);
-  }, 1500);
+      color: 'danger',
+      duration: 5000,
+      title: `Erreur lors de la demande de devis`,
+      description: `Vous pouvez nous contacter directement par mail ou par téléphone !`,
+      icon: 'i-heroicons-exclamation-triangle'
+    });
+  } finally {
+    isSubmitting.value = false;
+    formSubmitted.value = true;
+  }
 };
 </script>
 

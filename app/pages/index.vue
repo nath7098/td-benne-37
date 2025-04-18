@@ -3,11 +3,11 @@
     <header class="relative">
       <div class="absolute top-4 left-0 right-0 z-10">
         <div class="container mx-auto px-4">
-          <nav class="flex justify-between items-center">
+          <nav class="flex justify-between items-start">
             <NuxtLink to="/" class="text-white font-bold text-xl">
-              TD Location de bennes 37
+              <img src="/logo-no-bg.png" class="w-[100px] h-[100px]" />
             </NuxtLink>
-            <div class="hidden md:flex space-x-6">
+            <div class="hidden md:flex space-x-6 pt-4">
               <NuxtLink v-for="(item, i) in navigationItems" :key="i" :to="item.to" class="text-white hover:text-yellow-300 transition-colors">
                 {{ item.label }}
               </NuxtLink>
@@ -105,8 +105,7 @@ const navigationItems = [
   { label: 'Services', to: '#services' },
   { label: 'Avantages', to: '#avantages' },
   { label: 'Devis', to: '#quote-form' },
-  { label: 'Zone de couverture', to: '#zone-couverture' },
-  { label: 'Contact', to: '#contact' }
+  { label: 'Zone de couverture', to: '#zone-couverture' }
 ];
 </script>
 

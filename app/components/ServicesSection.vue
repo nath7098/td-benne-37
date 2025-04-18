@@ -48,37 +48,37 @@ const services = [
     title: 'Bennes à gravats et déchets de construction',
     description: 'Idéale pour évacuer béton, briques, tuiles, terres et autres déchets de chantier.',
     icon: 'i-lucide-hammer',
-    imageSrc: '/bennes/gravat.png' // Cette URL est un placeholder, remplacez-la par l'URL de votre image
+    imageSrc: '/bennes/benne-gravat.JPG' // Cette URL est un placeholder, remplacez-la par l'URL de votre image
   },
   {
     title: 'Bennes espaces verts',
     description: 'Solution parfaite pour l\'évacuation des branches, feuilles, tontes de pelouse, haies et autres déchets végétaux.',
     icon: 'i-lucide-leaf',
-    imageSrc: '/bennes/vegetaux.png'
+    imageSrc: '/bennes/benne-vert.JPG'
   },
   {
     title: 'Bennes vide-maison',
     description: 'Pour évacuer meubles, électroménagers, objets encombrants et déchets divers lors de déménagements ou débarras.',
     icon: 'i-lucide-sofa',
-    imageSrc: '/bennes/vegetaux.png'
+    imageSrc: '/bennes/benne-vide-maison.JPG'
   },
   {
     title: 'Bennes à évacuation de ferraille',
     description: 'Collecte et recyclage de ferraille, métaux et matériaux métalliques de toutes sortes.',
     icon: 'i-lucide-wrench',
-    imageSrc: '/bennes/vegetaux.png'
+    imageSrc: '/bennes/benne-ferraille.JPG'
   },
   {
     title: 'Mini-bennes',
     description: 'Solutions compactes pour les espaces restreints et les petits volumes de déchets.',
     icon: 'i-lucide-truck',
-    imageSrc: '/bennes/vegetaux.png'
+    imageSrc: '/bennes/mini-benne.JPG'
   },
   {
     title: 'Bennes spéciales',
     description: 'Conteneurs adaptés pour les déchets spécifiques nécessitant un traitement particulier.',
     icon: 'i-lucide-alert-triangle',
-    imageSrc: '/bennes/vegetaux.png'
+    imageSrc: '/bennes/benne-speciale.JPG'
   }
 ];
 </script>

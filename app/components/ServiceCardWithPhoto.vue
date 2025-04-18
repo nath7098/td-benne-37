@@ -35,7 +35,7 @@
             color="yellow"
             variant="ghost"
             class="rounded-lg font-medium"
-            to="#contact"
+            to="#quote-form"
         >
           En savoir plus
           <template #trailing>

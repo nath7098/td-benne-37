@@ -3,7 +3,10 @@ export default defineNuxtConfig({
   devtools: { enabled: false },
   modules: ['@nuxt/ui', '@nuxt/eslint', '@vueuse/motion/nuxt'],
   ui: {
-    icons: ['heroicons', 'lucide']
+    icons: ['heroicons', 'lucide'],
+    theme: {
+      colors: ['primary', 'secondary', 'info', 'success', 'warning', 'error', 'neutral', 'yellow']
+    }
   },
   css: ['~/assets/css/main.css'],
   colorMode: {

@@ -2,7 +2,7 @@
   <section class="relative h-screen flex items-center overflow-hidden bg-gray-900">
     <!-- Background avec overlay -->
     <div class="absolute inset-0 z-0">
-      <img src="/benne.png" alt="Location de bennes" class="w-full h-full object-cover opacity-40" />
+      <img src="/bennes/benne-ferraille.JPG" alt="Location de bennes" class="w-full h-full object-cover opacity-40" />
       <div class="absolute inset-0 bg-gradient-to-r from-gray-900 to-gray-900/80"></div>
       <div class="absolute inset-0 bg-pattern opacity-10"></div>
     </div>
@@ -20,7 +20,7 @@
           <UButton
               size="xl"
               color="yellow"
-              variant="solid"
+              variant="link"
               class="rounded-lg font-bold"
               :to="`tel:${contact.phone}`"
               target="_blank"
@@ -33,8 +33,8 @@
 
           <UButton
               size="xl"
-              color="white"
-              variant="outline"
+              color="yellow"
+              variant="link"
               class="rounded-lg font-bold"
               :to="`mailto:${contact.email}`"
               target="_blank"

@@ -23,7 +23,7 @@
             :initial="{ opacity: 0, x: 50 }"
             :enter="{ opacity: 1, x: 0 }"
         >
-          <h3 class="text-2xl font-bold mb-6">Nous intervenons dans :</h3>
+          <h3 class="text-2xl font-bold mb-6">Nous intervenons partout en indre et loire !</h3>
 
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
             <div
@@ -36,7 +36,7 @@
             </div>
           </div>
 
-          <p class="text-gray-600 mb-6">
+          <p class="text-gray-600 font-semibold mb-6">
             Vous ne trouvez pas votre ville ? Contactez-nous pour vérifier si nous pouvons intervenir dans votre zone.
           </p>
 
@@ -64,10 +64,26 @@ import { useContact } from '~/composables/useContact';
 const contact = useContact();
 
 const coverageAreas = [
-  'Tours', 'Saint-Pierre-des-Corps', 'Joué-lès-Tours',
-  'Saint-Avertin', 'Chambray-lès-Tours', 'La Riche',
-  'Ballan-Miré', 'Fondettes', 'Saint-Cyr-sur-Loire',
-  'Montlouis-sur-Loire', 'Vouvray', 'Azay-le-Rideau',
-  'Chinon', 'Loches', 'Amboise'
+  "Tours",
+  "Saint-Pierre-des-Corps",
+  "Joué-lès-Tours",
+  "Saint-Avertin",
+  "Chambray-lès-Tours",
+  "La Riche",
+  "Ballan-Miré",
+  "Fondettes",
+  "Saint-Cyr-sur-Loire",
+  "Montlouis-sur-Loire",
+  "Vouvray",
+  "Azay-le-Rideau",
+  "Chinon",
+  "Loches",
+  "Amboise",
+  "Langeais",
+  "Château-Renault",
+  "Descartes",
+  "Sainte-Maure-de-Touraine",
+  "Bléré",
+  "Richelieu"
 ];
 </script>
