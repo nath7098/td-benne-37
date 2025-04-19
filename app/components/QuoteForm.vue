@@ -69,7 +69,7 @@
                 <!-- Adresse de livraison -->
                 <UFormField label="Adresse de livraison *" name="address" class="col-span-1 md:col-span-2">
                   <UTextarea v-model="form.address" placeholder="Adresse complète où livrer la benne"
-                    class="w-full border-gray-300 focus:border-yellow-500 focus:ring focus:ring-yellow-200" rows="3" />
+                    class="w-full border-gray-300 focus:border-yellow-500 focus:ring focus:ring-yellow-200" :rows="3" />
                 </UFormField>
 
                 <!-- Date souhaitée -->
@@ -81,7 +81,7 @@
                 <!-- Message -->
                 <UFormField label="Message complémentaire" name="message" class="col-span-1 md:col-span-2">
                   <UTextarea v-model="form.message" placeholder="Précisions sur votre besoin..."
-                    class="w-full border-gray-300 focus:border-yellow-500 focus:ring focus:ring-yellow-200" rows="4" />
+                    class="w-full border-gray-300 focus:border-yellow-500 focus:ring focus:ring-yellow-200" :rows="4" />
                 </UFormField>
 
                 <!-- Bouton de soumission -->

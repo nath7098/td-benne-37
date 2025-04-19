@@ -9,7 +9,7 @@
     <div class="flex justify-end mb-8">
       <UButton
           icon="i-heroicons-x-mark"
-          color="white"
+          color="yellow"
           variant="ghost"
           @click="$emit('close')"
       />

@@ -14,7 +14,7 @@
             </div>
             <UButton
                 icon="i-heroicons-bars-3"
-                color="white"
+                color="yellow"
                 variant="ghost"
                 class="md:hidden"
                 @click="isMenuOpen = !isMenuOpen"
@@ -58,31 +58,10 @@
                 <UIcon name="i-heroicons-envelope" class="mr-2 text-yellow-400" />
                 <a :href="`mailto:${contact.email}`" class="hover:text-yellow-400 transition-colors">{{ contact.email }}</a>
               </li>
-              <li class="flex items-center">
-                <UIcon name="i-heroicons-map-pin" class="mr-2 text-yellow-400" />
-                <span>{{ contact.address }}</span>
-              </li>
             </ul>
           </div>
           <div>
-            <h3 class="text-lg font-bold mb-4">Informations</h3>
-            <ul class="space-y-2">
-              <li>
-                <NuxtLink to="/mentions-legales" class="hover:text-yellow-400 transition-colors">
-                  Mentions légales
-                </NuxtLink>
-              </li>
-              <li>
-                <NuxtLink to="/cgv" class="hover:text-yellow-400 transition-colors">
-                  Conditions générales de vente
-                </NuxtLink>
-              </li>
-              <li>
-                <NuxtLink to="/confidentialite" class="hover:text-yellow-400 transition-colors">
-                  Politique de confidentialité
-                </NuxtLink>
-              </li>
-            </ul>
+            
           </div>
         </div>
         <div class="mt-8 pt-8 border-t border-gray-800 text-center text-gray-500">
@@ -96,6 +75,22 @@
 <script setup>
 import { ref } from 'vue';
 import { useContact } from '~/composables/useContact';
+
+definePageMeta({
+  script: [
+    {
+      type: 'application/ld+json',
+      children: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'LocalBusiness',
+        name: 'TD Location de Bennes 37',
+        image: 'https://td-locationbenne37.fr/logo-transparent.png',
+        telephone: '+33 6 01 37 04 43',
+        url: 'https://td-locationbenne37.fr'
+      })
+    }
+  ]
+});
 
 const isMenuOpen = ref(false);
 const contact = useContact();
