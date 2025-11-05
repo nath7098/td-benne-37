@@ -1,8 +1,8 @@
 <template>
   <div
+      v-motion
       class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100 hover:border-yellow-300 hover:-translate-y-1"
       :style="{ transitionDelay: `${delay}ms` }"
-      v-motion
       :initial="{ opacity: 0, y: 20 }"
       :enter="{ opacity: 1, y: 0 }"
   >

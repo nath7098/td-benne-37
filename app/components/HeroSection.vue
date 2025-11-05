@@ -2,9 +2,9 @@
   <section class="relative h-screen flex items-center overflow-hidden bg-gray-900">
     <!-- Background avec overlay -->
     <div class="absolute inset-0 z-0">
-      <img src="/bennes/benne-ferraille.JPG" alt="Location de bennes" class="w-full h-full object-cover opacity-40" />
-      <div class="absolute inset-0 bg-gradient-to-r from-gray-900 to-gray-900/80"></div>
-      <div class="absolute inset-0 bg-pattern opacity-10"></div>
+      <img src="/bennes/benne-ferraille.JPG" alt="Location de bennes" class="w-full h-full object-cover opacity-40" >
+      <div class="absolute inset-0 bg-gradient-to-r from-gray-900 to-gray-900/80"/>
+      <div class="absolute inset-0 bg-pattern opacity-10"/>
     </div>
 
     <div class="container mx-auto px-4 relative z-10">

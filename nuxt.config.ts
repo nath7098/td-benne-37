@@ -33,9 +33,12 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
+      htmlAttrs: {
+        lang: 'fr'
+      },
       title: 'TD Location de Bennes 37',
       meta: [
-        { name: 'description', content: 'Location de bennes à Tours et en Indre-et-Loire (37). Service rapide et professionnel pour particuliers et entreprises.' },
+        { name: 'description', content: 'Location de bennes à Tours et en Indre-et-Loire (37). Service rapide et professionnel pour particuliers et entreprises. Devis gratuit sous 24h. Appelez-nous au 06 01 37 04 43.' },
         { name: 'keywords', content: 'location benne Tours, benne 37, location benne Indre-et-Loire, benne chantier, benne déchets' },
         { name: 'robots', content: 'index, follow' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -47,7 +50,7 @@ export default defineNuxtConfig({
         { name: 'twitter:card', content: 'summary_large_image' }
       ],
       link: [
-        { rel: 'icon', type: 'image/png', href: '/favicon.png' },
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
         { rel: 'canonical', href: 'https://td-locationbenne37.fr' }
       ]
     }

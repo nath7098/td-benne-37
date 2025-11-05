@@ -15,7 +15,7 @@
             :title="service.title"
             :description="service.description"
             :icon="service.icon"
-            :imageSrc="service.imageSrc"
+            :image-src="service.imageSrc"
             :delay="index * 100"
         />
       </div>

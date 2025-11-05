@@ -12,8 +12,8 @@
         <div
             v-for="(advantage, index) in advantages"
             :key="index"
-            class="text-center p-6"
             v-motion
+            class="text-center p-6"
             :initial="{ opacity: 0, scale: 0.9 }"
             :enter="{ opacity: 1, scale: 1, transition: { delay: index * 100 } }"
         >

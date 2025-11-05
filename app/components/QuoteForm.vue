@@ -10,49 +10,56 @@
           </p>
         </div>
 
-        <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-200" v-motion
+        <div
+v-motion class="bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-200"
           :initial="{ opacity: 0, y: 30 }" :enter="{ opacity: 1, y: 0, transition: { duration: 600 } }">
           <div class="grid grid-cols-1 lg:grid-cols-5">
             <!-- Formulaire -->
             <div class="col-span-3 p-8 lg:p-10">
-              <UForm :state="form" @submit.prevent="submitForm" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <UForm :state="form" class="grid grid-cols-1 md:grid-cols-2 gap-6" @submit.prevent="submitForm">
                 <!-- Progression du formulaire -->
                 <UProgress v-model="formProgress" :max="6" class="col-span-1 md:col-span-2" />
 
                 <!-- Informations personnelles -->
 
                 <UFormField label="Nom *" name="lastName">
-                  <UInput v-model="form.lastName" placeholder="Votre nom"
+                  <UInput
+v-model="form.lastName" placeholder="Votre nom"
                     class="w-full border-gray-300 focus:border-yellow-500 focus:ring focus:ring-yellow-200" />
                 </UFormField>
 
                 <UFormField label="Prénom *" name="firstName">
-                  <UInput v-model="form.firstName" placeholder="Votre prénom"
+                  <UInput
+v-model="form.firstName" placeholder="Votre prénom"
                     class="w-full border-gray-300 focus:border-yellow-500 focus:ring focus:ring-yellow-200" />
                 </UFormField>
 
                 <UFormField label="Téléphone *" name="phone">
-                  <UInput v-model="form.phone" placeholder="Votre numéro de téléphone"
+                  <UInput
+v-model="form.phone" placeholder="Votre numéro de téléphone"
                     class="w-full border-gray-300 focus:border-yellow-500 focus:ring focus:ring-yellow-200" />
                 </UFormField>
 
                 <UFormField label="Email *" name="email">
-                  <UInput v-model="form.email" type="email" placeholder="Votre adresse email"
+                  <UInput
+v-model="form.email" type="email" placeholder="Votre adresse email"
                     class="w-full border-gray-300 focus:border-yellow-500 focus:ring focus:ring-yellow-200" />
                 </UFormField>
 
                 <!-- Type de client -->
                 <UFormField label="Vous êtes" name="clientType" class="col-span-1 md:col-span-2">
                   <div class="grid grid-cols-2 gap-4">
-                    <button type="button" @click="form.clientType = 'particulier'"
-                      class="flex items-center justify-center p-4 rounded-xl border transition-all"
-                      :class="form.clientType === 'particulier' ? 'border-yellow-500 bg-yellow-50 text-yellow-700' : 'border-gray-200 hover:bg-gray-50'">
+                    <button
+type="button" class="flex items-center justify-center p-4 rounded-xl border transition-all"
+                      :class="form.clientType === 'particulier' ? 'border-yellow-500 bg-yellow-50 text-yellow-700' : 'border-gray-200 hover:bg-gray-50'"
+                      @click="form.clientType = 'particulier'">
                       <UIcon name="i-heroicons-user" class="mr-2" />
                       Particulier
                     </button>
-                    <button type="button" @click="form.clientType = 'professionnel'"
-                      class="flex items-center justify-center p-4 rounded-xl border transition-all"
-                      :class="form.clientType === 'professionnel' ? 'border-yellow-500 bg-yellow-50 text-yellow-700' : 'border-gray-200 hover:bg-gray-50'">
+                    <button
+type="button" class="flex items-center justify-center p-4 rounded-xl border transition-all"
+                      :class="form.clientType === 'professionnel' ? 'border-yellow-500 bg-yellow-50 text-yellow-700' : 'border-gray-200 hover:bg-gray-50'"
+                      @click="form.clientType = 'professionnel'">
                       <UIcon name="i-heroicons-building-office" class="mr-2" />
                       Professionnel
                     </button>
@@ -61,32 +68,37 @@
 
                 <!-- Type de benne -->
                 <UFormField label="Type de benne *" name="binType" class="col-span-1 md:col-span-2">
-                  <USelect v-model="form.binType" :items="binTypes" placeholder="Sélectionnez le type de benne"
+                  <USelect
+v-model="form.binType" :items="binTypes" placeholder="Sélectionnez le type de benne"
                     class="w-full border-gray-300 focus:border-yellow-500 focus:ring focus:ring-yellow-200"
                     icon="i-heroicons-truck" />
                 </UFormField>
 
                 <!-- Adresse de livraison -->
                 <UFormField label="Adresse de livraison *" name="address" class="col-span-1 md:col-span-2">
-                  <UTextarea v-model="form.address" placeholder="Adresse complète où livrer la benne"
+                  <UTextarea
+v-model="form.address" placeholder="Adresse complète où livrer la benne"
                     class="w-full border-gray-300 focus:border-yellow-500 focus:ring focus:ring-yellow-200" :rows="3" />
                 </UFormField>
 
                 <!-- Date souhaitée -->
                 <UFormField label="Date souhaitée (approximative) *" name="date" class="col-span-1 md:col-span-2">
-                  <UInput v-model="form.date" type="date"
+                  <UInput
+v-model="form.date" type="date"
                     class="w-full border-gray-300 focus:border-yellow-500 focus:ring focus:ring-yellow-200" />
                 </UFormField>
 
                 <!-- Message -->
                 <UFormField label="Message complémentaire" name="message" class="col-span-1 md:col-span-2">
-                  <UTextarea v-model="form.message" placeholder="Précisions sur votre besoin..."
+                  <UTextarea
+v-model="form.message" placeholder="Précisions sur votre besoin..."
                     class="w-full border-gray-300 focus:border-yellow-500 focus:ring focus:ring-yellow-200" :rows="4" />
                 </UFormField>
 
                 <!-- Bouton de soumission -->
                 <div class="flex justify-end mt-8">
-                  <UButton type="submit" size="lg" color="yellow" :loading="isSubmitting" :disabled="!isFormValid"
+                  <UButton
+type="submit" size="lg" color="yellow" :loading="isSubmitting" :disabled="!isFormValid"
                     class="rounded-xl font-bold px-8 py-4 shadow-md hover:shadow-lg transition-all">
                     <template #leading>
                       <UIcon name="i-heroicons-paper-airplane" />
@@ -150,7 +162,8 @@
                   <p class="text-gray-300 mb-3">
                     Besoin d'une réponse immédiate ? Appelez-nous :
                   </p>
-                  <a :href="`tel:${contact.phone}`"
+                  <a
+:href="`tel:${contact.phone}`"
                     class="inline-flex items-center justify-center w-full py-3 px-4 bg-yellow-500 text-gray-800 rounded-xl font-bold hover:bg-yellow-400 transition-colors mt-2">
                     <UIcon name="i-heroicons-phone" class="mr-2" />
                     {{ contact.phone }}
@@ -166,7 +179,7 @@
 </template>
 
 <script setup>
-import { ref, computed, watch } from 'vue';
+import { ref, computed } from 'vue';
 import { useContact } from '~/composables/useContact';
 import emailjs from 'emailjs-com';
 

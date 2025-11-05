@@ -1,7 +1,7 @@
 <template>
   <div
-      class="fixed inset-0 bg-gray-900 z-50 p-6"
       v-motion
+      class="fixed inset-0 bg-gray-900 z-50 p-6"
       :initial="{ opacity: 0 }"
       :enter="{ opacity: 1 }"
       :leave="{ opacity: 0 }"
