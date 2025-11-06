@@ -1,35 +1,7 @@
 <template>
   <div>
     <header class="relative">
-      <div class="absolute top-4 left-0 right-0 z-10">
-        <div class="container mx-auto px-4">
-          <nav class="flex justify-between items-start">
-            <NuxtLink to="/" class="text-white font-bold text-xl">
-              <NuxtImg src="/logo-no-bg.png" alt="TD Location de Bennes 37 - Logo" class="w-[100px] h-[100px]" loading="eager" />
-            </NuxtLink>
-            <div class="hidden md:flex space-x-6 pt-4 items-center">
-              <NuxtLink v-for="(item, i) in navigationItems.filter(item => !item.dropdown)" :key="i" :to="item.to" class="text-white hover:text-yellow-300 transition-colors">
-                {{ item.label }}
-              </NuxtLink>
-              <UDropdownMenu :items="cityDropdownItems">
-                <button class="text-white hover:text-yellow-300 transition-colors flex items-center gap-1">
-                  <span>Villes</span>
-                  <UIcon name="i-heroicons-chevron-down" class="w-4 h-4" />
-                </button>
-              </UDropdownMenu>
-            </div>
-            <UButton
-                icon="i-heroicons-bars-3"
-                color="yellow"
-                variant="ghost"
-                class="md:hidden"
-                @click="isMenuOpen = !isMenuOpen"
-            />
-          </nav>
-        </div>
-      </div>
-
-      <MobileMenu v-if="isMenuOpen" :items="navigationItems" @close="isMenuOpen = false" />
+      <SiteHeader transparent />
 
       <HeroSection />
     </header>
@@ -43,78 +15,15 @@
       <CitiesSection />
       <FAQSection />
       <QuoteForm />
-      <CoverageSection />
     </main>
 
-    <StickyContactBar />
+    <SiteFooter />
 
-    <footer class="bg-gray-900 text-white py-12">
-      <div class="container mx-auto px-4">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div>
-            <h3 class="text-lg font-bold mb-4">TD Location de bennes 37</h3>
-            <p class="text-gray-400">
-              Location de bennes et solutions de gestion des déchets pour particuliers et professionnels.
-            </p>
-          </div>
-          <div>
-            <h3 class="text-lg font-bold mb-4">Navigation</h3>
-            <ul class="space-y-2">
-              <li>
-                <a href="#services" class="text-gray-400 hover:text-yellow-400 transition-colors">Nos Services</a>
-              </li>
-              <li>
-                <a href="#avantages" class="text-gray-400 hover:text-yellow-400 transition-colors">Nos Avantages</a>
-              </li>
-              <li>
-                <a href="#tarifs" class="text-gray-400 hover:text-yellow-400 transition-colors">Nos Tarifs</a>
-              </li>
-              <li>
-                <a href="#faq" class="text-gray-400 hover:text-yellow-400 transition-colors">Questions Fréquentes</a>
-              </li>
-              <li>
-                <a href="#quote-form" class="text-gray-400 hover:text-yellow-400 transition-colors">Demande de Devis</a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3 class="text-lg font-bold mb-4">Nos villes</h3>
-            <ul class="space-y-2">
-              <li><NuxtLink to="/location-benne-tours" class="text-gray-400 hover:text-yellow-400 transition-colors">Tours</NuxtLink></li>
-              <li><NuxtLink to="/location-benne-fondettes" class="text-gray-400 hover:text-yellow-400 transition-colors">Fondettes</NuxtLink></li>
-              <li><NuxtLink to="/location-benne-joue-les-tours" class="text-gray-400 hover:text-yellow-400 transition-colors">Joué-lès-Tours</NuxtLink></li>
-              <li><NuxtLink to="/location-benne-chinon" class="text-gray-400 hover:text-yellow-400 transition-colors">Chinon</NuxtLink></li>
-              <li><NuxtLink to="/villes" class="text-yellow-400 hover:text-yellow-300 transition-colors font-medium">+ 9 autres villes →</NuxtLink></li>
-            </ul>
-          </div>
-          <div>
-            <h3 class="text-lg font-bold mb-4">Contact</h3>
-            <ul class="space-y-2">
-              <li class="flex items-center">
-                <UIcon name="i-heroicons-phone" class="mr-2 text-yellow-400" />
-                <a :href="`tel:${contact.phone}`" class="hover:text-yellow-400 transition-colors">{{ contact.phone }}</a>
-              </li>
-              <li class="flex items-center">
-                <UIcon name="i-heroicons-envelope" class="mr-2 text-yellow-400" />
-                <a :href="`mailto:${contact.email}`" class="hover:text-yellow-400 transition-colors">{{ contact.email }}</a>
-              </li>
-              <li class="flex items-center mt-4">
-                <UIcon name="i-heroicons-map-pin" class="mr-2 text-yellow-400" />
-                <span class="text-gray-400">Tours, Indre-et-Loire (37)</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="mt-8 pt-8 border-t border-gray-800 text-center text-gray-500">
-          <p>© {{ new Date().getFullYear() }} TD location de bennes 37. Tous droits réservés.</p>
-        </div>
-      </div>
-    </footer>
+    <StickyContactBar />
   </div>
 </template>
 
-<script setup>
-import { ref } from 'vue';
+<script setup lang="ts">
 import { useContact } from '~/composables/useContact';
 
 definePageMeta({
@@ -246,48 +155,7 @@ definePageMeta({
   ]
 });
 
-const isMenuOpen = ref(false);
 const contact = useContact();
-
-const navigationItems = [
-  { label: 'Accueil', to: '/' },
-  { label: 'Services', to: '#services' },
-  { label: 'Tarifs', to: '#tarifs' },
-  { label: 'Avantages', to: '#avantages' },
-  { label: 'FAQ', to: '#faq' },
-  { label: 'Devis', to: '#quote-form' }
-];
-
-const cityDropdownItems = [
-  {
-    label: 'Tours',
-    to: '/location-benne-tours',
-    icon: 'i-heroicons-map-pin'
-  },
-  {
-    label: 'Fondettes',
-    to: '/location-benne-fondettes',
-    icon: 'i-heroicons-map-pin'
-  },
-  {
-    label: 'Joué-lès-Tours',
-    to: '/location-benne-joue-les-tours',
-    icon: 'i-heroicons-map-pin'
-  },
-  {
-    label: 'Chinon',
-    to: '/location-benne-chinon',
-    icon: 'i-heroicons-map-pin'
-  },
-  {
-    type: 'separator'
-  },
-  {
-    label: 'Voir toutes les villes',
-    to: '/villes',
-    icon: 'i-heroicons-arrow-right'
-  }
-];
 </script>
 
 <style>

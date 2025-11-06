@@ -3,7 +3,7 @@
     <div class="container mx-auto px-4">
       <div class="text-center mb-12">
         <h2 class="text-3xl md:text-4xl font-bold mb-4">
-          Location de bennes dans 13 villes de l'Indre-et-Loire
+          Location de bennes l'Indre-et-Loire
         </h2>
         <p class="text-xl text-gray-600 max-w-3xl mx-auto">
           TD Location de Bennes 37 intervient partout dans le département avec un service de proximité rapide et professionnel
@@ -41,7 +41,7 @@
             <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
               <UIcon name="i-heroicons-map-pin" class="text-3xl text-yellow-600" />
             </div>
-            <h3 class="font-bold text-lg mb-2">13 villes</h3>
+            <h3 class="font-bold text-lg mb-2">Indre et Loire</h3>
             <p class="text-gray-600 text-sm">Couverture complète de l'Indre-et-Loire</p>
           </div>
           <div class="p-6 bg-white rounded-xl shadow-sm">

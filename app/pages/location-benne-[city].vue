@@ -40,6 +40,8 @@ useHead({
 
 <template>
   <div>
+    <SiteHeader />
+
     <CityHeroSection :city="city" />
 
     <ServicesSection />
@@ -59,6 +61,8 @@ useHead({
     <NearbyCitiesSection :nearby-cities="nearbyCitiesData" />
 
     <CoverageSection />
+
+    <SiteFooter />
 
     <StickyContactBar />
   </div>

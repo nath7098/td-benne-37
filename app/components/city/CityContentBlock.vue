@@ -71,7 +71,7 @@
                 <div>
                   <p class="text-sm text-gray-700">
                     <strong>Rayon d'intervention :</strong>
-                    Nous couvrons {{ city.name }} et un rayon de 30km incluant toutes les communes voisines.
+                    Nous couvrons {{ city.name }} ainsi que tout le reste de l'Indre et Loire (37).
                   </p>
                 </div>
               </div>

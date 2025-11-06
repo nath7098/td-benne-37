@@ -6,11 +6,11 @@ useHead({
   meta: [
     {
       name: 'description',
-      content: 'TD Location de Bennes 37 intervient dans 13 villes de l\'Indre-et-Loire : Tours, Fondettes, Joué-lès-Tours, Chinon, Langeais, et plus. Livraison 24h partout dans le 37.'
+      content: 'TD Location de Bennes 37 intervient dans tout l\'Indre-et-Loire : Tours, Fondettes, Joué-lès-Tours, Chinon, Langeais, et plus. Livraison 24h partout dans le 37.'
     },
     { name: 'robots', content: 'index, follow' },
     { property: 'og:title', content: 'Nos Zones d\'Intervention | TD Location de Bennes 37' },
-    { property: 'og:description', content: 'Location de bennes dans 13 villes de l\'Indre-et-Loire. Service rapide et professionnel.' },
+    { property: 'og:description', content: 'Location de bennes dans tout l\'Indre-et-Loire. Service rapide et professionnel.' },
     { property: 'og:url', content: 'https://td-locationbenne37.fr/villes' }
   ],
   link: [
@@ -46,6 +46,8 @@ definePageMeta({
 
 <template>
   <div>
+    <SiteHeader />
+
     <!-- Hero Section -->
     <section class="relative py-20 bg-gradient-to-br from-gray-900 to-gray-800 text-white overflow-hidden">
       <div class="absolute inset-0 opacity-10">
@@ -58,13 +60,13 @@ definePageMeta({
             Nos zones d'intervention en <span class="text-yellow-400">Indre-et-Loire (37)</span>
           </h1>
           <p class="text-xl text-gray-300 mb-8">
-            TD Location de Bennes 37 intervient dans 13 villes du département pour vous offrir
+            TD Location de Bennes 37 intervient dans tout le département pour vous offrir
             un service de proximité rapide et professionnel
           </p>
           <div class="flex flex-wrap justify-center gap-6 text-lg">
             <div class="flex items-center">
               <UIcon name="i-heroicons-map-pin" class="mr-2 text-yellow-400" />
-              <span>13 villes couvertes</span>
+              <span>+60 villes villes couvertes</span>
             </div>
             <div class="flex items-center">
               <UIcon name="i-heroicons-clock" class="mr-2 text-yellow-400" />
@@ -175,12 +177,13 @@ definePageMeta({
             <NuxtImg src="/zone.png" alt="Carte des zones d'intervention TD Location de Bennes 37" class="w-full" loading="lazy" />
           </div>
           <p class="text-center text-gray-600 mt-6">
-            Nous intervenons dans l'ensemble de l'Indre-et-Loire avec une couverture prioritaire
-            sur les 13 villes listées ci-dessus et leurs communes voisines.
+            Nous intervenons dans l'ensemble de l'Indre-et-Loire.
           </p>
         </div>
       </div>
     </section>
+
+    <SiteFooter />
 
     <StickyContactBar />
   </div>

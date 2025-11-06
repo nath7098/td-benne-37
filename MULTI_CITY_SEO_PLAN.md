@@ -372,7 +372,7 @@ Purpose: Central landing page listing all 13 cities
         Nos zones d'intervention en Indre-et-Loire (37)
       </h1>
       <p class="text-xl text-gray-600 mb-12">
-        TD Location de Bennes 37 intervient dans 13 villes de l'Indre-et-Loire
+        TD Location de Bennes 37 intervient dans tout l'Indre-et-Loire
       </p>
 
       <div class="grid md:grid-cols-3 gap-6">
@@ -402,7 +402,7 @@ Purpose: Central landing page listing all 13 cities
 <section id="villes" class="py-16 bg-gray-50">
   <div class="container mx-auto px-4">
     <h2 class="text-3xl font-bold text-center mb-12">
-      Location de bennes dans 13 villes de l'Indre-et-Loire
+      Location de bennes dans tout l'Indre-et-Loire
     </h2>
 
     <div class="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
