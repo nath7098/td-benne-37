@@ -52,8 +52,6 @@ useHead({
 
     <AdvantagesSection />
 
-    <PricingSection />
-
     <FAQSection />
 
     <QuoteForm />

@@ -18,9 +18,6 @@
               <NuxtLink to="/#avantages" class="text-gray-400 hover:text-yellow-400 transition-colors">Nos Avantages</NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/#tarifs" class="text-gray-400 hover:text-yellow-400 transition-colors">Nos Tarifs</NuxtLink>
-            </li>
-            <li>
               <NuxtLink to="/#faq" class="text-gray-400 hover:text-yellow-400 transition-colors">Questions Fréquentes</NuxtLink>
             </li>
             <li>

@@ -4,7 +4,7 @@
       <div class="text-center mb-16">
         <h2 class="text-3xl md:text-4xl font-bold mb-4">Comment ça marche ?</h2>
         <p class="text-gray-600 max-w-2xl mx-auto">
-          Louer une benne à Tours, c'est simple et rapide en 4 étapes
+          Louer une benne dans l'Indre et Loire (37), c'est simple et rapide en 4 étapes
         </p>
       </div>
 
@@ -63,7 +63,7 @@
             </div>
             <h3 class="text-xl font-bold mb-3">Livraison rapide</h3>
             <p class="text-gray-600">
-              Nous livrons votre benne sous 24h à l'adresse indiquée. Vous pouvez la remplir à votre rythme.
+              Nous livrons votre benne à l'adresse indiquée. Vous pouvez la remplir à votre rythme.
             </p>
           </div>
 

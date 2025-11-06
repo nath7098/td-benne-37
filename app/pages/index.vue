@@ -11,7 +11,6 @@
       <EnhancedCTA />
       <HowItWorksSection />
       <AdvantagesSection />
-      <PricingSection />
       <CitiesSection />
       <FAQSection />
       <QuoteForm />
@@ -51,12 +50,6 @@ definePageMeta({
               {
                 '@type': 'ListItem',
                 position: 3,
-                name: 'Tarifs',
-                item: 'https://td-locationbenne37.fr#tarifs'
-              },
-              {
-                '@type': 'ListItem',
-                position: 4,
                 name: 'Contact',
                 item: 'https://td-locationbenne37.fr#quote-form'
               }

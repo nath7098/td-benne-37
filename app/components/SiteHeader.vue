@@ -24,11 +24,8 @@
           <NuxtLink to="/" :class="transparent ? 'text-white hover:text-yellow-300 transition-colors' : 'text-white hover:text-yellow-400 transition-colors'">
             Accueil
           </NuxtLink>
-          <NuxtLink to="#services" :class="transparent ? 'text-white hover:text-yellow-300 transition-colors' : 'text-white hover:text-yellow-400 transition-colors'">
+          <NuxtLink to="/#services" :class="transparent ? 'text-white hover:text-yellow-300 transition-colors' : 'text-white hover:text-yellow-400 transition-colors'">
             Services
-          </NuxtLink>
-          <NuxtLink to="#tarifs" :class="transparent ? 'text-white hover:text-yellow-300 transition-colors' : 'text-white hover:text-yellow-400 transition-colors'">
-            Tarifs
           </NuxtLink>
           <UDropdownMenu :items="cityDropdownItems">
             <button :class="transparent ? 'text-white hover:text-yellow-300 transition-colors flex items-center gap-1' : 'text-white hover:text-yellow-400 transition-colors flex items-center gap-1'">
@@ -78,7 +75,6 @@ const isMenuOpen = ref(false)
 const navigationItems = [
   { label: 'Accueil', to: '/' },
   { label: 'Services', to: '/#services' },
-  { label: 'Tarifs', to: '/#tarifs' },
   { label: 'Villes', to: '/villes' },
   { label: 'FAQ', to: '/#faq' },
   { label: 'Devis', to: '/#quote-form' }
