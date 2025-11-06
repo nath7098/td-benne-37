@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   devtools: { enabled: false },
   ssr: true,
   nitro: {
-    preset: 'static'
+    preset: 'vercel'
   },
   modules: ['@nuxt/ui', '@nuxt/image', '@nuxt/eslint', '@vueuse/motion/nuxt', '@nuxtjs/sitemap', '@nuxtjs/robots'],
   image: {
