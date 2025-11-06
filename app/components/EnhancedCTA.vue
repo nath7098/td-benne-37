@@ -1,8 +1,8 @@
 <template>
   <section class="py-16 bg-gradient-to-r from-yellow-500 to-yellow-600">
     <div
-        class="container mx-auto px-4"
         v-motion
+        class="container mx-auto px-4"
         :initial="{ opacity: 0, y: 20 }"
         :enter="{ opacity: 1, y: 0 }"
     >
@@ -45,7 +45,7 @@
 
           <!-- Image -->
           <div class="relative h-64 md:h-auto">
-            <img src="/benne.png" alt="Location de benne" class="w-full h-full object-cover" />
+            <NuxtImg src="/benne.png" alt="Location de benne" class="w-full h-full object-cover" loading="lazy" />
             <div class="absolute inset-0 bg-gray-900/20 flex items-center justify-center">
               <div class="bg-white/90 rounded-xl p-6 shadow-lg transform rotate-3 hover:rotate-0 transition-transform">
                 <div class="text-center">

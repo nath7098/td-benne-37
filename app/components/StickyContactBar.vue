@@ -1,7 +1,7 @@
 <template>
   <div
-      class="fixed bottom-0 left-0 right-0 bg-gray-900 text-white py-3 px-4 z-50 shadow-lg md:hidden"
       v-motion
+      class="fixed bottom-0 left-0 right-0 bg-gray-900 text-white py-3 px-4 z-50 shadow-lg md:hidden"
       :initial="{ opacity: 0, y: 20 }"
       :enter="{ opacity: 1, y: 0, transition: { delay: 500 } }"
   >
@@ -39,8 +39,8 @@
   </div>
 
   <div
-      class="fixed right-6 bottom-6 hidden md:block z-50"
       v-motion
+      class="fixed right-6 bottom-6 hidden md:block z-50"
       :initial="{ opacity: 0, scale: 0.8 }"
       :enter="{ opacity: 1, scale: 1, transition: { delay: 500 } }"
   >
@@ -48,7 +48,7 @@
         size="xl"
         color="yellow"
         variant="solid"
-        class="rounded-full h-16 w-16 shadow-lg"
+        class="rounded-full h-16 w-16 shadow-lg flex items-center justify-center p-0"
         :to="`tel:${contact.phone}`"
         target="_blank"
     >
