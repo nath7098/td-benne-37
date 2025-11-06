@@ -73,6 +73,7 @@ definePageMeta({
         priceRange: '$$',
         address: {
           '@type': 'PostalAddress',
+          streetAddress: 'Indre-et-Loire',
           addressLocality: 'Tours',
           addressRegion: 'Indre-et-Loire',
           postalCode: '37000',

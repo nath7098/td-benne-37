@@ -41,6 +41,7 @@ export const useCitySchema = (city: City) => {
         priceRange: '€€',
         address: {
           '@type': 'PostalAddress',
+          streetAddress: 'Indre-et-Loire',
           addressLocality: city.name,
           postalCode: city.postalCode,
           addressRegion: 'Indre-et-Loire',
