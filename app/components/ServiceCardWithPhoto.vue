@@ -8,11 +8,12 @@
   >
     <div class="relative overflow-hidden h-48">
       <!-- Image avec effet de zoom au survol -->
-      <img
+      <NuxtImg
           :src="imageSrc"
           :alt="title"
           class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"
-      >
+          loading="lazy"
+      />
 
       <!-- Overlay avec dégradé -->
       <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-60"/>

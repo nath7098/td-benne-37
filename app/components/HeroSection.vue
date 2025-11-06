@@ -2,8 +2,8 @@
   <section class="relative h-screen flex items-center overflow-hidden bg-gray-900">
     <!-- Background avec overlay -->
     <div class="absolute inset-0 z-0">
-      <img src="/bennes/benne-ferraille.JPG" alt="Location de bennes" class="w-full h-full object-cover opacity-40" >
-      <div class="absolute inset-0 bg-gradient-to-r from-gray-900 to-gray-900/80"/>
+      <NuxtImg src="/bennes/benne-ferraille.JPG" alt="Location de bennes" class="w-full h-full object-cover opacity-40" loading="eager" />
+      <div class="absolute inset-0 bg-gradient-to-r from-gray-900 to-gray-900/80" />
       <div class="absolute inset-0 bg-pattern opacity-10"/>
     </div>
 
