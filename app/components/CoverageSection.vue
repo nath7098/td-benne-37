@@ -10,12 +10,12 @@
 
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div
-            class="rounded-xl overflow-hidden shadow-lg border border-gray-200"
             v-motion
+            class="rounded-xl overflow-hidden shadow-lg border border-gray-200"
             :initial="{ opacity: 0, x: -50 }"
             :enter="{ opacity: 1, x: 0 }"
         >
-          <img src="/zone.png" alt="Carte zone de couverture" class="w-full h-full object-cover" />
+          <NuxtImg src="/zone.png" alt="Carte zone de couverture - Tours et Indre-et-Loire" class="w-full h-full object-cover" loading="lazy" />
         </div>
 
         <div

@@ -1,21 +1,22 @@
 <template>
   <div
+      v-motion
       class="group overflow-hidden rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100 hover:border-yellow-300"
       :style="{ transitionDelay: `${delay}ms` }"
-      v-motion
       :initial="{ opacity: 0, y: 20 }"
       :enter="{ opacity: 1, y: 0 }"
   >
     <div class="relative overflow-hidden h-48">
       <!-- Image avec effet de zoom au survol -->
-      <img
+      <NuxtImg
           :src="imageSrc"
           :alt="title"
           class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"
+          loading="lazy"
       />
 
       <!-- Overlay avec dégradé -->
-      <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-60"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-60"/>
 
       <!-- Icône flottante -->
       <div class="absolute top-4 left-4 w-12 h-12 bg-yellow-400 rounded-lg flex items-center justify-center text-white transform transition-transform duration-300 group-hover:rotate-12">
