@@ -4,7 +4,7 @@
       <div class="text-center mb-16">
         <h2 class="text-3xl md:text-4xl font-bold mb-4">Questions fréquentes</h2>
         <p class="text-gray-600 max-w-2xl mx-auto">
-          Tout ce que vous devez savoir sur la location de bennes à Tours
+          Tout ce que vous devez savoir sur la location de bennes en Indre et Loire (37)
         </p>
       </div>
 
@@ -18,8 +18,8 @@
 <script setup>
 const faqItems = [
   {
-    label: 'Quel est le délai de livraison d\'une benne à Tours ?',
-    content: 'Nous livrons votre benne sous 24h suivant votre demande dans toute la région de Tours et l\'Indre-et-Loire (37).',
+    label: 'Quel est le délai de livraison d\'une benne en Indre et Loire (37) ?',
+    content: 'Nous livrons votre benne suivant votre demande dans tout l\'Indre-et-Loire (37).',
     defaultOpen: false
   },
   {
@@ -29,12 +29,12 @@ const faqItems = [
   },
   {
     label: 'Combien coûte la location d\'une benne ?',
-    content: 'Le prix varie selon la taille de la benne (5m³ à 30m³), le type de déchets et la durée de location. Nos tarifs commencent à partir de 180€ TTC pour une benne de 8m³. Demandez un devis gratuit pour obtenir un prix exact adapté à votre besoin.',
+    content: 'Le prix varie selon la taille de la benne (5m³ à 30m³), le type de déchets et la durée de location.',
     defaultOpen: false
   },
   {
     label: 'Quelle taille de benne choisir ?',
-    content: 'Pour des travaux de rénovation domestique : benne 8-10m³. Pour un chantier moyen ou débarras complet : benne 15m³. Pour gros chantiers : benne 20-30m³. Notre équipe vous conseille gratuitement sur la taille adaptée à votre projet.',
+    content: 'Nous vous transmettrons un devis et des conseils adaptés à votre besoin.',
     defaultOpen: false
   },
   {
