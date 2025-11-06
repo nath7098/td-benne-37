@@ -48,7 +48,7 @@
         size="xl"
         color="yellow"
         variant="solid"
-        class="rounded-full h-16 w-16 shadow-lg"
+        class="rounded-full h-16 w-16 shadow-lg flex items-center justify-center p-0"
         :to="`tel:${contact.phone}`"
         target="_blank"
     >

@@ -46,15 +46,19 @@
           </UButton>
         </div>
 
-        <div class="flex items-center gap-2 text-gray-300">
-          <UIcon name="i-heroicons-check-circle" class="text-yellow-400" />
-          <span>Réponse sous 24h</span>
-          <span class="mx-2">•</span>
-          <UIcon name="i-heroicons-check-circle" class="text-yellow-400" />
-          <span>Prix compétitifs</span>
-          <span class="mx-2">•</span>
-          <UIcon name="i-heroicons-check-circle" class="text-yellow-400" />
-          <span>Service local</span>
+        <div class="flex flex-wrap gap-4 text-white">
+          <div class="flex items-center">
+            <UIcon name="i-heroicons-clock" class="mr-2 text-yellow-400" />
+            <span>Réponse sous 24h</span>
+          </div>
+          <div class="flex items-center">
+            <UIcon name="i-heroicons-check-badge" class="mr-2 text-yellow-400" />
+            <span>Devis gratuit</span>
+          </div>
+          <div class="flex items-center">
+            <UIcon name="i-heroicons-map-pin" class="mr-2 text-yellow-400" />
+            <span>Tout l'Indre et Loire '37)</span>
+          </div>
         </div>
       </div>
     </div>

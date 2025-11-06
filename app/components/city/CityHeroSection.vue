@@ -13,10 +13,7 @@
           Location de bennes <span class="text-yellow-400">{{ city.displayName }}</span>
         </h1>
         <p class="text-xl text-gray-200 mb-4">
-          Service professionnel et rapide {{ city.displayName }} ({{ city.postalCode.slice(0, 5) }})
-        </p>
-        <p class="text-lg text-gray-300 mb-8">
-          Livraison sous 24h • {{ city.population }} habitants • Tous types de déchets
+          Service <span class="text-yellow-400">professionnel</span> et rapide {{ city.displayName }} ({{ city.postalCode.slice(0, 5) }})
         </p>
 
         <div class="flex flex-col sm:flex-row gap-4 mb-8">
@@ -33,7 +30,7 @@
           </UButton>
           <UButton
               size="xl"
-              color="white"
+              color="neutral"
               variant="outline"
               :href="`tel:0601370443`"
               class="font-bold"
@@ -48,7 +45,7 @@
         <div class="flex flex-wrap gap-4 text-white">
           <div class="flex items-center">
             <UIcon name="i-heroicons-clock" class="mr-2 text-yellow-400" />
-            <span>Livraison 24h</span>
+            <span>Réponse sous 24h</span>
           </div>
           <div class="flex items-center">
             <UIcon name="i-heroicons-check-badge" class="mr-2 text-yellow-400" />
