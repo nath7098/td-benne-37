@@ -7,10 +7,16 @@
             <NuxtLink to="/" class="text-white font-bold text-xl">
               <NuxtImg src="/logo-no-bg.png" alt="TD Location de Bennes 37 - Logo" class="w-[100px] h-[100px]" loading="eager" />
             </NuxtLink>
-            <div class="hidden md:flex space-x-6 pt-4">
-              <NuxtLink v-for="(item, i) in navigationItems" :key="i" :to="item.to" class="text-white hover:text-yellow-300 transition-colors">
+            <div class="hidden md:flex space-x-6 pt-4 items-center">
+              <NuxtLink v-for="(item, i) in navigationItems.filter(item => !item.dropdown)" :key="i" :to="item.to" class="text-white hover:text-yellow-300 transition-colors">
                 {{ item.label }}
               </NuxtLink>
+              <UDropdownMenu :items="cityDropdownItems">
+                <button class="text-white hover:text-yellow-300 transition-colors flex items-center gap-1">
+                  <span>Villes</span>
+                  <UIcon name="i-heroicons-chevron-down" class="w-4 h-4" />
+                </button>
+              </UDropdownMenu>
             </div>
             <UButton
                 icon="i-heroicons-bars-3"
@@ -34,6 +40,7 @@
       <HowItWorksSection />
       <AdvantagesSection />
       <PricingSection />
+      <CitiesSection />
       <FAQSection />
       <QuoteForm />
       <CoverageSection />
@@ -43,7 +50,7 @@
 
     <footer class="bg-gray-900 text-white py-12">
       <div class="container mx-auto px-4">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <h3 class="text-lg font-bold mb-4">TD Location de bennes 37</h3>
             <p class="text-gray-400">
@@ -60,14 +67,24 @@
                 <a href="#avantages" class="text-gray-400 hover:text-yellow-400 transition-colors">Nos Avantages</a>
               </li>
               <li>
-                <a href="#faq" class="text-gray-400 hover:text-yellow-400 transition-colors">Questions Fréquentes</a>
+                <a href="#tarifs" class="text-gray-400 hover:text-yellow-400 transition-colors">Nos Tarifs</a>
               </li>
               <li>
-                <a href="#tarifs" class="text-gray-400 hover:text-yellow-400 transition-colors">Nos Tarifs</a>
+                <a href="#faq" class="text-gray-400 hover:text-yellow-400 transition-colors">Questions Fréquentes</a>
               </li>
               <li>
                 <a href="#quote-form" class="text-gray-400 hover:text-yellow-400 transition-colors">Demande de Devis</a>
               </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold mb-4">Nos villes</h3>
+            <ul class="space-y-2">
+              <li><NuxtLink to="/location-benne-tours" class="text-gray-400 hover:text-yellow-400 transition-colors">Tours</NuxtLink></li>
+              <li><NuxtLink to="/location-benne-fondettes" class="text-gray-400 hover:text-yellow-400 transition-colors">Fondettes</NuxtLink></li>
+              <li><NuxtLink to="/location-benne-joue-les-tours" class="text-gray-400 hover:text-yellow-400 transition-colors">Joué-lès-Tours</NuxtLink></li>
+              <li><NuxtLink to="/location-benne-chinon" class="text-gray-400 hover:text-yellow-400 transition-colors">Chinon</NuxtLink></li>
+              <li><NuxtLink to="/villes" class="text-yellow-400 hover:text-yellow-300 transition-colors font-medium">+ 9 autres villes →</NuxtLink></li>
             </ul>
           </div>
           <div>
@@ -235,9 +252,41 @@ const contact = useContact();
 const navigationItems = [
   { label: 'Accueil', to: '/' },
   { label: 'Services', to: '#services' },
+  { label: 'Tarifs', to: '#tarifs' },
   { label: 'Avantages', to: '#avantages' },
-  { label: 'Devis', to: '#quote-form' },
-  { label: 'Zone de couverture', to: '#zone-couverture' }
+  { label: 'FAQ', to: '#faq' },
+  { label: 'Devis', to: '#quote-form' }
+];
+
+const cityDropdownItems = [
+  {
+    label: 'Tours',
+    to: '/location-benne-tours',
+    icon: 'i-heroicons-map-pin'
+  },
+  {
+    label: 'Fondettes',
+    to: '/location-benne-fondettes',
+    icon: 'i-heroicons-map-pin'
+  },
+  {
+    label: 'Joué-lès-Tours',
+    to: '/location-benne-joue-les-tours',
+    icon: 'i-heroicons-map-pin'
+  },
+  {
+    label: 'Chinon',
+    to: '/location-benne-chinon',
+    icon: 'i-heroicons-map-pin'
+  },
+  {
+    type: 'separator'
+  },
+  {
+    label: 'Voir toutes les villes',
+    to: '/villes',
+    icon: 'i-heroicons-arrow-right'
+  }
 ];
 </script>
 
