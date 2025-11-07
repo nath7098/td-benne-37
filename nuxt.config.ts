@@ -27,6 +27,20 @@ export default defineNuxtConfig({
     url: 'https://td-locationbenne37.fr',
     name: 'TD Location de Bennes 37'
   },
+  sitemap: {
+    urls: async () => {
+      // Import cities data
+      const { cityList } = await import('./app/data/cities')
+
+      // Generate URLs for all city pages
+      return cityList.map(city => ({
+        loc: `/location-benne-${city.slug}`,
+        lastmod: new Date().toISOString(),
+        changefreq: 'monthly',
+        priority: 0.8
+      }))
+    }
+  },
   robots: {
     rules: [
       {
