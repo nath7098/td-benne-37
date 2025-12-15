@@ -22,10 +22,10 @@
         <!-- Desktop Navigation -->
         <div :class="['hidden md:flex items-center space-x-6', transparent ? 'pt-4' : '']">
           <NuxtLink to="/" :class="transparent ? 'text-white hover:text-yellow-300 transition-colors' : 'text-white hover:text-yellow-400 transition-colors'">
-            Accueil
+            Bennes
           </NuxtLink>
-          <NuxtLink to="/#services" :class="transparent ? 'text-white hover:text-yellow-300 transition-colors' : 'text-white hover:text-yellow-400 transition-colors'">
-            Services
+          <NuxtLink to="/terrassement" :class="transparent ? 'text-white hover:text-yellow-300 transition-colors' : 'text-white hover:text-yellow-400 transition-colors'">
+            Terrassement
           </NuxtLink>
           <UDropdownMenu :items="cityDropdownItems">
             <button :class="transparent ? 'text-white hover:text-yellow-300 transition-colors flex items-center gap-1' : 'text-white hover:text-yellow-400 transition-colors flex items-center gap-1'">
@@ -75,6 +75,7 @@ const isMenuOpen = ref(false)
 const navigationItems = [
   { label: 'Accueil', to: '/' },
   { label: 'Services', to: '/#services' },
+  { label: 'Terrassement', to: '/terrassement' },
   { label: 'Villes', to: '/villes' },
   { label: 'FAQ', to: '/#faq' },
   { label: 'Devis', to: '/#quote-form' }
