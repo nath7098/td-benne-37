@@ -2,7 +2,7 @@
   <section class="relative h-screen flex items-center overflow-hidden bg-gray-900">
     <!-- Background avec overlay -->
     <div class="absolute inset-0 z-0">
-      <NuxtImg src="/bennes/benne-ferraille.JPG" alt="Location de bennes" class="w-full h-full object-cover opacity-40" loading="eager" />
+      <NuxtImg src="/bennes/benne-gravat.JPG" alt="Terrassement professionnel en Indre-et-Loire" class="w-full h-full object-cover opacity-40" loading="eager" />
       <div class="absolute inset-0 bg-gradient-to-r from-gray-900 to-gray-900/80" />
       <div class="absolute inset-0 bg-pattern opacity-10"/>
     </div>
@@ -10,10 +10,10 @@
     <div class="container mx-auto px-4 relative z-10">
       <div class="max-w-3xl">
         <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
-          Location de bennes <span class="text-yellow-400">professionnelle</span>
+          Travaux de <span class="text-yellow-400">terrassement</span> en Indre-et-Loire
         </h1>
         <p class="text-xl text-gray-200 mb-8">
-          Solutions de gestion des déchets rapides et efficaces pour particuliers et professionnels
+          Expert en terrassement à Tours et dans tout le département (37). Excavation, nivellement, remblaiement pour particuliers et professionnels.
         </p>
 
         <div class="flex flex-col sm:flex-row gap-4 mb-8">
@@ -34,22 +34,21 @@
           <UButton
               size="xl"
               color="yellow"
-              variant="link"
+              variant="outline"
               class="rounded-lg font-bold"
-              :to="`mailto:${contact.email}`"
-              target="_blank"
+              to="#quote-form"
           >
             <template #leading>
-              <UIcon name="i-heroicons-envelope" />
+              <UIcon name="i-heroicons-document-text" />
             </template>
-            {{ contact.email }}
+            Devis gratuit
           </UButton>
         </div>
 
-        <div class="flex flex-wrap gap-4 text-white mb-8">
+        <div class="flex flex-wrap gap-4 text-white">
           <div class="flex items-center">
             <UIcon name="i-heroicons-clock" class="mr-2 text-yellow-400" />
-            <span>Réponse sous 24h</span>
+            <span>Intervention rapide sous 48h</span>
           </div>
           <div class="flex items-center">
             <UIcon name="i-heroicons-check-badge" class="mr-2 text-yellow-400" />
@@ -57,46 +56,7 @@
           </div>
           <div class="flex items-center">
             <UIcon name="i-heroicons-map-pin" class="mr-2 text-yellow-400" />
-            <span>Tout l'Indre et Loire '37)</span>
-          </div>
-        </div>
-
-        <!-- CTA Terrassement -->
-        <div class="relative">
-          <div class="bg-gradient-to-r from-emerald-500 to-teal-600 rounded-xl p-6 shadow-2xl border-2 border-emerald-400 hover:shadow-emerald-500/50 transition-all duration-300 group">
-            <div class="absolute -top-3 -right-3">
-              <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-yellow-400 text-gray-900 animate-pulse">
-                NOUVEAU
-              </span>
-            </div>
-            <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4">
-              <div class="flex-shrink-0">
-                <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
-                  <UIcon name="i-lucide-shovel" class="text-4xl text-white" />
-                </div>
-              </div>
-              <div class="flex-1">
-                <h3 class="text-xl font-bold text-white mb-1">Services de Terrassement</h3>
-                <p class="text-emerald-50 text-sm">
-                  Excavation, nivellement, remblaiement - Intervention dans tout le département
-                </p>
-              </div>
-              <div class="flex-shrink-0">
-                <NuxtLink to="/terrassement">
-                  <UButton
-                      size="lg"
-                      color="white"
-                      variant="solid"
-                      class="rounded-lg font-bold group-hover:scale-105 transition-transform"
-                  >
-                    <template #trailing>
-                      <UIcon name="i-heroicons-arrow-right" />
-                    </template>
-                    Découvrir
-                  </UButton>
-                </NuxtLink>
-              </div>
-            </div>
+            <span>Tout l'Indre-et-Loire (37)</span>
           </div>
         </div>
       </div>
@@ -108,7 +68,7 @@
           color="white"
           icon="i-heroicons-chevron-down"
           class="rounded-full"
-          to="#services"
+          to="#services-terrassement"
       />
     </div>
   </section>

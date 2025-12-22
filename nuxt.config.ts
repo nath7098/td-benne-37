@@ -33,12 +33,22 @@ export default defineNuxtConfig({
       const { cityList } = await import('./app/data/cities')
 
       // Generate URLs for all city pages
-      return cityList.map(city => ({
+      const cityUrls = cityList.map(city => ({
         loc: `/location-benne-${city.slug}`,
         lastmod: new Date().toISOString(),
         changefreq: 'monthly',
         priority: 0.8
       }))
+
+      // Add terrassement page
+      const terrassementUrl = {
+        loc: '/terrassement',
+        lastmod: new Date().toISOString(),
+        changefreq: 'monthly',
+        priority: 0.9
+      }
+
+      return [...cityUrls, terrassementUrl]
     }
   },
   robots: {
