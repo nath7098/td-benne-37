@@ -2,9 +2,9 @@
   <section id="services-terrassement" class="py-20 bg-white">
     <div class="container mx-auto px-4">
       <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold mb-4">Nos services de terrassement</h2>
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Nos services de terrassement en Indre-et-Loire (37)</h2>
         <p class="text-gray-600 max-w-2xl mx-auto">
-          Une gamme complète de prestations pour tous vos projets de terrassement, du plus simple au plus complexe.
+          Une gamme complète de prestations pour tous vos projets de terrassement à Tours, Chinon, Joué-lès-Tours et dans tout le département. Du plus simple au plus complexe.
         </p>
       </div>
 
@@ -57,7 +57,7 @@ const contact = useContact();
 const services = [
   {
     title: 'Excavation et décaissement',
-    description: 'Terrassement pour fondations de maisons, bâtiments et ouvrages divers.',
+    description: 'Terrassement pour fondations de maisons et bâtiments en Indre-et-Loire. Service professionnel à Tours, Chinon, Joué.',
     icon: 'i-lucide-shovel',
     features: [
       'Excavation pour fondations',
@@ -68,7 +68,7 @@ const services = [
   },
   {
     title: 'Nivellement de terrain',
-    description: 'Mise à niveau et préparation de votre terrain pour construction ou aménagement.',
+    description: 'Mise à niveau et préparation de votre terrain pour construction ou aménagement partout dans le 37.',
     icon: 'i-lucide-align-horizontal-space-around',
     features: [
       'Nivellement précis au laser',
@@ -79,7 +79,7 @@ const services = [
   },
   {
     title: 'Remblaiement et compactage',
-    description: 'Remplissage et compactage de terrains pour assurer une base solide.',
+    description: 'Remplissage et compactage de terrains en Indre-et-Loire pour assurer une base solide et durable.',
     icon: 'i-lucide-layers',
     features: [
       'Remblaiement de fouilles',
@@ -90,7 +90,7 @@ const services = [
   },
   {
     title: 'Terrassement pour piscine',
-    description: 'Excavation et préparation spécifique pour installation de piscine.',
+    description: 'Excavation et préparation spécifique pour installation de piscine à Tours et dans tout le département 37.',
     icon: 'i-lucide-waves',
     features: [
       'Excavation sur mesure',
@@ -101,7 +101,7 @@ const services = [
   },
   {
     title: 'Aménagement extérieur',
-    description: 'Terrassement pour allées, terrasses, parking et espaces verts.',
+    description: 'Terrassement pour allées, terrasses, parking et espaces verts. Intervention rapide en Touraine.',
     icon: 'i-lucide-home',
     features: [
       'Terrassement pour allée',
@@ -112,7 +112,7 @@ const services = [
   },
   {
     title: 'Démolition et déblaiement',
-    description: 'Démolition d\'ouvrages existants et évacuation des gravats.',
+    description: 'Démolition d\'ouvrages existants et évacuation des gravats avec bennes adaptées.',
     icon: 'i-lucide-hammer',
     features: [
       'Démolition d\'ouvrages',

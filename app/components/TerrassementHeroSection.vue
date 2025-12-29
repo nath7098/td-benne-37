@@ -10,10 +10,10 @@
     <div class="container mx-auto px-4 relative z-10">
       <div class="max-w-3xl">
         <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
-          Travaux de <span class="text-yellow-400">terrassement</span> en Indre-et-Loire
+          <span class="text-yellow-400">Terrassement 37</span> - Tours, Chinon, Joué-lès-Tours
         </h1>
         <p class="text-xl text-gray-200 mb-8">
-          Expert en terrassement à Tours et dans tout le département (37). Excavation, nivellement, remblaiement pour particuliers et professionnels.
+          Expert en terrassement à Tours, Chinon, Joué-lès-Tours, Fondettes et dans toute l'Indre-et-Loire (37). Excavation, nivellement, remblaiement pour particuliers et professionnels.
         </p>
 
         <div class="flex flex-col sm:flex-row gap-4 mb-8">

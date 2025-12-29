@@ -24,6 +24,110 @@
         </div>
       </div>
 
+      <!-- Contenu SEO détaillé par ville -->
+      <div class="max-w-6xl mx-auto mb-12">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Tours -->
+          <div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+            <h3 class="text-xl font-bold mb-3 text-gray-800 flex items-center">
+              <UIcon name="i-heroicons-map-pin" class="mr-2 text-yellow-500" />
+              Terrassement Tours
+            </h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Spécialiste du <strong>terrassement à Tours (37000)</strong>, nous intervenons dans tous les quartiers : centre-ville, Deux-Lions, Sanitas, Rabelais. Excavation, nivellement et remblaiement pour vos projets de construction ou rénovation.
+            </p>
+          </div>
+
+          <!-- Chinon -->
+          <div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+            <h3 class="text-xl font-bold mb-3 text-gray-800 flex items-center">
+              <UIcon name="i-heroicons-map-pin" class="mr-2 text-yellow-500" />
+              Terrassement Chinon
+            </h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              <strong>Terrassement à Chinon (37500)</strong> : nos équipes maîtrisent les contraintes du patrimoine historique. Intervention pour terrassement de maison, piscine ou aménagement extérieur dans tout le Chinonais.
+            </p>
+          </div>
+
+          <!-- Joué-lès-Tours -->
+          <div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+            <h3 class="text-xl font-bold mb-3 text-gray-800 flex items-center">
+              <UIcon name="i-heroicons-map-pin" class="mr-2 text-yellow-500" />
+              Terrassement Joué-lès-Tours
+            </h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Expert en <strong>terrassement à Joué-lès-Tours (37300)</strong>. La Rabière, Beaulieu, Les Atlantes : nous couvrons toute la ville. Service rapide pour particuliers et entreprises du BTP.
+            </p>
+          </div>
+
+          <!-- Fondettes -->
+          <div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+            <h3 class="text-xl font-bold mb-3 text-gray-800 flex items-center">
+              <UIcon name="i-heroicons-map-pin" class="mr-2 text-yellow-500" />
+              Terrassement Fondettes
+            </h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              <strong>Terrassement à Fondettes (37230)</strong> : travaux de terrassement pour maison, excavation, nivellement. Intervention rapide à Vallières, Lussault et dans tous les quartiers.
+            </p>
+          </div>
+
+          <!-- Montlouis-sur-Loire -->
+          <div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+            <h3 class="text-xl font-bold mb-3 text-gray-800 flex items-center">
+              <UIcon name="i-heroicons-map-pin" class="mr-2 text-yellow-500" />
+              Terrassement Montlouis
+            </h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Service de <strong>terrassement à Montlouis-sur-Loire (37270)</strong>. Terrassement pour construction, piscine, aménagement paysager. Expertise locale du terrain de coteau.
+            </p>
+          </div>
+
+          <!-- Langeais -->
+          <div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+            <h3 class="text-xl font-bold mb-3 text-gray-800 flex items-center">
+              <UIcon name="i-heroicons-map-pin" class="mr-2 text-yellow-500" />
+              Terrassement Langeais
+            </h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              <strong>Terrassement à Langeais (37130)</strong> et environs. Excavation pour fondation, nivellement de terrain, création d'accès. Service professionnel adapté aux zones rurales.
+            </p>
+          </div>
+
+          <!-- Azay-le-Rideau -->
+          <div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+            <h3 class="text-xl font-bold mb-3 text-gray-800 flex items-center">
+              <UIcon name="i-heroicons-map-pin" class="mr-2 text-yellow-500" />
+              Terrassement Azay
+            </h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              <strong>Terrassement à Azay-le-Rideau (37190)</strong> : respect du patrimoine architectural. Terrassement pour rénovation, construction neuve, aménagement extérieur.
+            </p>
+          </div>
+
+          <!-- Châteaurenault -->
+          <div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+            <h3 class="text-xl font-bold mb-3 text-gray-800 flex items-center">
+              <UIcon name="i-heroicons-map-pin" class="mr-2 text-yellow-500" />
+              Terrassement Châteaurenault
+            </h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              <strong>Terrassement à Châteaurenault (37110)</strong> : nord Touraine. Excavation, nivellement, remblaiement. Intervention rapide La Gaudellerie, Les Hâtifs et tous secteurs.
+            </p>
+          </div>
+
+          <!-- Bourgueil -->
+          <div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+            <h3 class="text-xl font-bold mb-3 text-gray-800 flex items-center">
+              <UIcon name="i-heroicons-map-pin" class="mr-2 text-yellow-500" />
+              Terrassement Bourgueil
+            </h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              <strong>Terrassement à Bourgueil (37140)</strong> : zone viticole. Adaptation aux accès étroits, terrassement pour cave, maison, ou aménagement. Service professionnel.
+            </p>
+          </div>
+        </div>
+      </div>
+
       <div class="max-w-4xl mx-auto">
         <div class="bg-gradient-to-br from-yellow-50 to-amber-50 rounded-2xl p-8 border border-yellow-200">
           <h3 class="text-2xl font-bold mb-4 text-gray-800">Nos zones d'intervention privilégiées</h3>
@@ -36,7 +140,7 @@
               <ul class="space-y-2 text-gray-600">
                 <li class="flex items-start">
                   <UIcon name="i-heroicons-check-circle" class="text-emerald-500 mt-1 mr-2 flex-shrink-0" />
-                  <span>Tours centre et périphérie</span>
+                  <span>Terrassement Tours centre et périphérie</span>
                 </li>
                 <li class="flex items-start">
                   <UIcon name="i-heroicons-check-circle" class="text-emerald-500 mt-1 mr-2 flex-shrink-0" />
@@ -44,7 +148,7 @@
                 </li>
                 <li class="flex items-start">
                   <UIcon name="i-heroicons-check-circle" class="text-emerald-500 mt-1 mr-2 flex-shrink-0" />
-                  <span>Montlouis-sur-Loire, Notre-Dame-d'Oé</span>
+                  <span>Montlouis-sur-Loire, Notre-Dame-d'Oé, Savonnières</span>
                 </li>
               </ul>
             </div>
@@ -56,11 +160,11 @@
               <ul class="space-y-2 text-gray-600">
                 <li class="flex items-start">
                   <UIcon name="i-heroicons-check-circle" class="text-emerald-500 mt-1 mr-2 flex-shrink-0" />
-                  <span>Chinon, Azay-le-Rideau, Langeais</span>
+                  <span>Terrassement Chinon, Azay-le-Rideau, Langeais</span>
                 </li>
                 <li class="flex items-start">
                   <UIcon name="i-heroicons-check-circle" class="text-emerald-500 mt-1 mr-2 flex-shrink-0" />
-                  <span>Bourgueil, Savonnières, Châteaurenault</span>
+                  <span>Bourgueil, Châteaurenault</span>
                 </li>
                 <li class="flex items-start">
                   <UIcon name="i-heroicons-check-circle" class="text-emerald-500 mt-1 mr-2 flex-shrink-0" />

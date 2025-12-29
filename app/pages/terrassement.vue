@@ -31,21 +31,21 @@ const mainCities = ['Tours', 'Joué-lès-Tours', 'Chinon', 'Montlouis-sur-Loire'
 
 // SEO Meta tags
 useHead({
-  title: 'Terrassement en Indre-et-Loire (37) - Service Professionnel Tours',
+  title: 'Terrassement 37 Tours, Chinon, Joué | Excavation & Nivellement Indre-et-Loire',
   meta: [
     {
       name: 'description',
-      content: `Expert en terrassement à ${mainCities.join(', ')} et partout en Indre-et-Loire (37). Nivellement, excavation, remblaiement. Devis gratuit sous 24h. ☎ ${contact.phone}`
+      content: `Terrassement professionnel 37 : Tours, Chinon, Joué-lès-Tours, Fondettes, Montlouis, Langeais, Azay. Excavation, nivellement, remblaiement. Devis gratuit 24h ☎ ${contact.phone}`
     },
     { name: 'robots', content: 'index, follow' },
     { property: 'og:type', content: 'website' },
     { property: 'og:site_name', content: 'TD Location de Bennes 37' },
-    { property: 'og:title', content: 'Terrassement Professionnel en Indre-et-Loire (37) | TD Bennes 37' },
-    { property: 'og:description', content: `Services de terrassement professionnels à ${cityNames}. Excavation, nivellement, remblaiement pour particuliers et entreprises.` },
+    { property: 'og:title', content: 'Terrassement 37 - Expert Excavation Tours & Indre-et-Loire | TD Bennes' },
+    { property: 'og:description', content: `Terrassement 37 : excavation, nivellement, remblaiement à ${mainCities.join(', ')} et toutes villes d'Indre-et-Loire. Service professionnel rapide.` },
     { property: 'og:image', content: 'https://td-locationbenne37.fr/logo-transparent.png' },
     { property: 'og:url', content: 'https://td-locationbenne37.fr/terrassement' },
     { property: 'og:locale', content: 'fr_FR' },
-    { name: 'keywords', content: `terrassement ${cityNames.toLowerCase()}, terrassement indre-et-loire, excavation 37, nivellement terrain, remblaiement, travaux de terrassement` }
+    { name: 'keywords', content: `terrassement 37, terrassement tours, terrassement chinon, terrassement joue les tours, terrassement fondettes, terrassement montlouis, terrassement langeais, terrassement azay le rideau, excavation 37, nivellement terrain 37, remblaiement indre-et-loire, travaux terrassement ${cityNames.toLowerCase()}, terrassier 37, entreprise terrassement tours, terrassement piscine 37, terrassement maison 37` }
   ],
   link: [
     { rel: 'canonical', href: 'https://td-locationbenne37.fr/terrassement' }
@@ -79,7 +79,7 @@ definePageMeta({
           },
           {
             '@type': 'Service',
-            name: 'Travaux de Terrassement en Indre-et-Loire',
+            name: 'Travaux de Terrassement en Indre-et-Loire (37)',
             serviceType: 'Terrassement',
             provider: {
               '@type': 'LocalBusiness',
@@ -93,17 +93,34 @@ definePageMeta({
                 addressRegion: 'Indre-et-Loire',
                 postalCode: '37000',
                 addressCountry: 'FR'
-              }
+              },
+              priceRange: '$$',
+              url: 'https://td-locationbenne37.fr/terrassement'
             },
             areaServed: cityList.map(city => ({
               '@type': 'City',
-              name: city.name
+              name: city.name,
+              containedInPlace: {
+                '@type': 'AdministrativeArea',
+                name: 'Indre-et-Loire'
+              }
             })),
-            description: `Services professionnels de terrassement en Indre-et-Loire : excavation, nivellement, remblaiement, préparation de terrain pour construction. Intervention rapide à ${cityNames}.`,
+            description: `Expert en terrassement 37 : excavation, nivellement, remblaiement, terrassement piscine. Intervention rapide à Tours, Chinon, Joué-lès-Tours, Fondettes, Montlouis-sur-Loire, Langeais, Azay-le-Rideau et toutes communes d'Indre-et-Loire. Devis gratuit sous 24h.`,
+            availableChannel: {
+              '@type': 'ServiceChannel',
+              servicePhone: {
+                '@type': 'ContactPoint',
+                telephone: '+33 6 01 37 04 43',
+                contactType: 'customer service',
+                areaServed: 'FR',
+                availableLanguage: 'French'
+              }
+            },
             offers: {
               '@type': 'Offer',
               availability: 'https://schema.org/InStock',
-              priceRange: '$$'
+              priceRange: '$$',
+              url: 'https://td-locationbenne37.fr/terrassement'
             }
           },
           {
@@ -147,6 +164,30 @@ definePageMeta({
                 acceptedAnswer: {
                   '@type': 'Answer',
                   text: 'Un chantier de terrassement se déroule en plusieurs étapes : étude du terrain et piquetage, décapage de la terre végétale, excavation ou remblaiement selon les besoins, nivellement et compactage du sol. Nous fournissons également les bennes nécessaires pour l\'évacuation des terres et gravats.'
+                }
+              },
+              {
+                '@type': 'Question',
+                name: 'Faites-vous du terrassement à Tours et dans l\'agglomération ?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Oui, nous réalisons des travaux de terrassement à Tours (37000) et dans toute l\'agglomération tourangelle : Joué-lès-Tours, Fondettes, La Ville-aux-Dames, Montlouis-sur-Loire, Notre-Dame-d\'Oé, Savonnières. Notre proximité avec Tours nous permet d\'intervenir rapidement, généralement sous 24 à 48h.'
+                }
+              },
+              {
+                '@type': 'Question',
+                name: 'Proposez-vous le terrassement à Chinon et dans le sud du département ?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Absolument ! Nous intervenons pour le terrassement à Chinon, Azay-le-Rideau, Langeais, Bourgueil et dans tout le sud de l\'Indre-et-Loire. Nos équipes connaissent parfaitement les spécificités des terrains de cette zone et s\'adaptent aux contraintes du patrimoine architectural local.'
+                }
+              },
+              {
+                '@type': 'Question',
+                name: 'Quel est le prix d\'un terrassement en Indre-et-Loire ?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Le prix d\'un terrassement dépend de nombreux facteurs : surface à terrasser, profondeur d\'excavation, nature du sol, accès au chantier, évacuation des terres. Pour un devis précis et gratuit pour votre projet de terrassement en Indre-et-Loire (37), contactez-nous au 06 01 37 04 43. Nous nous déplaçons gratuitement pour évaluer votre terrain.'
                 }
               }
             ]
