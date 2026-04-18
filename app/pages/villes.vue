@@ -66,7 +66,7 @@ definePageMeta({
           <div class="flex flex-wrap justify-center gap-6 text-lg">
             <div class="flex items-center">
               <UIcon name="i-heroicons-map-pin" class="mr-2 text-yellow-400" />
-              <span>+60 villes villes couvertes</span>
+              <span>20 villes couvertes</span>
             </div>
             <div class="flex items-center">
               <UIcon name="i-heroicons-clock" class="mr-2 text-yellow-400" />
