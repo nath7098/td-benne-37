@@ -125,6 +125,83 @@
               <strong>Terrassement à Bourgueil (37140)</strong> : zone viticole. Adaptation aux accès étroits, terrassement pour cave, maison, ou aménagement. Service professionnel.
             </p>
           </div>
+
+          <!-- Saumur -->
+          <div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+            <h3 class="text-xl font-bold mb-3 text-gray-800 flex items-center">
+              <UIcon name="i-heroicons-map-pin" class="mr-2 text-yellow-500" />
+              Terrassement Saumur
+            </h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              <strong>Terrassement à Saumur (49400)</strong> : la Perle de l'Anjou. Excavation, nivellement pour construction et rénovation. Intervention dans tout le Saumurois avec respect du patrimoine.
+            </p>
+          </div>
+
+          <!-- Châtellerault -->
+          <div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+            <h3 class="text-xl font-bold mb-3 text-gray-800 flex items-center">
+              <UIcon name="i-heroicons-map-pin" class="mr-2 text-yellow-500" />
+              Terrassement Châtellerault
+            </h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              <strong>Terrassement à Châtellerault (86100)</strong> : Vienne limitrophe. Terrassement pour construction, démolition, aménagement. Service professionnel dans toute la ville.
+            </p>
+          </div>
+
+          <!-- Blois -->
+          <div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+            <h3 class="text-xl font-bold mb-3 text-gray-800 flex items-center">
+              <UIcon name="i-heroicons-map-pin" class="mr-2 text-yellow-500" />
+              Terrassement Blois
+            </h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              <strong>Terrassement à Blois (41000)</strong> : vallée de la Loire. Expertise en terrassement patrimonial, adaptation aux contraintes d'accès du centre historique. Service complet.
+            </p>
+          </div>
+
+          <!-- Loches -->
+          <div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+            <h3 class="text-xl font-bold mb-3 text-gray-800 flex items-center">
+              <UIcon name="i-heroicons-map-pin" class="mr-2 text-yellow-500" />
+              Terrassement Loches
+            </h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              <strong>Terrassement à Loches (37600)</strong> : cité royale médiévale. Terrassement avec respect du patrimoine historique. Excavation pour maison de caractère ou construction neuve.
+            </p>
+          </div>
+
+          <!-- Descartes -->
+          <div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+            <h3 class="text-xl font-bold mb-3 text-gray-800 flex items-center">
+              <UIcon name="i-heroicons-map-pin" class="mr-2 text-yellow-500" />
+              Terrassement Descartes
+            </h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              <strong>Terrassement à Descartes (37160)</strong> : sud Touraine. Terrassement pour rénovation de bâti ancien, construction neuve. Service adapté aux zones rurales.
+            </p>
+          </div>
+
+          <!-- Loudun -->
+          <div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+            <h3 class="text-xl font-bold mb-3 text-gray-800 flex items-center">
+              <UIcon name="i-heroicons-map-pin" class="mr-2 text-yellow-500" />
+              Terrassement Loudun
+            </h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              <strong>Terrassement à Loudun (86200)</strong> : entre Touraine et Poitou. Terrassement professionnel pour maison, démolition, aménagement extérieur.
+            </p>
+          </div>
+
+          <!-- Vendôme -->
+          <div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+            <h3 class="text-xl font-bold mb-3 text-gray-800 flex items-center">
+              <UIcon name="i-heroicons-map-pin" class="mr-2 text-yellow-500" />
+              Terrassement Vendôme
+            </h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              <strong>Terrassement à Vendôme (41100)</strong> : Loir-et-Cher. Service de terrassement pour construction, rénovation, piscine. Adaptation aux contraintes de topographie.
+            </p>
+          </div>
         </div>
       </div>
 
@@ -186,7 +263,7 @@
             <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
               <UIcon name="i-heroicons-map" class="text-3xl text-yellow-600" />
             </div>
-            <h3 class="font-bold text-lg mb-2">14 villes</h3>
+            <h3 class="font-bold text-lg mb-2">20 villes</h3>
             <p class="text-gray-600 text-sm">Zones d'intervention principales</p>
           </div>
           <div class="p-6 bg-gray-50 rounded-xl shadow-sm">
