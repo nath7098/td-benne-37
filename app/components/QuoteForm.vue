@@ -256,7 +256,7 @@ const submitForm = async () => {
   isSubmitting.value = true;
 
   try {
-    const responseStatus = await emailjs.send('service_9sip9sp', 'template_td_benne_37', form.value, 'user_W3AFP2shDIAiHW0MFhaPv');
+    const responseStatus = await emailjs.send('service_9sip9sp', 'template_td_benne_37', {...form.value, type_prestation: 'location de benne'}, 'user_W3AFP2shDIAiHW0MFhaPv');
     console.log(responseStatus);
     toast.add({
       color: 'success',
