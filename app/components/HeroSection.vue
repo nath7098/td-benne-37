@@ -82,7 +82,7 @@
                 </p>
               </div>
               <div class="flex-shrink-0">
-                <NuxtLink to="/terrassement">
+                <a href="https://terrassement.td-locationbenne37.fr" target="_blank" rel="noopener noreferrer">
                   <UButton
                       size="lg"
                       color="white"
@@ -94,7 +94,7 @@
                     </template>
                     Découvrir
                   </UButton>
-                </NuxtLink>
+                </a>
               </div>
             </div>
           </div>
