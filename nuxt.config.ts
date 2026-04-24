@@ -40,22 +40,15 @@ export default defineNuxtConfig({
         priority: 0.8
       }))
 
-      // Add terrassement page
-      const terrassementUrl = {
-        loc: '/terrassement',
-        lastmod: new Date().toISOString(),
-        changefreq: 'monthly',
-        priority: 0.9
-      }
-
-      return [...cityUrls, terrassementUrl]
+      return cityUrls
     }
   },
   robots: {
     rules: [
       {
         userAgent: '*',
-        allow: '/'
+        allow: '/',
+        disallow: '/terrassement'
       }
     ]
   },
