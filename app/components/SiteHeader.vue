@@ -24,7 +24,7 @@
           <NuxtLink to="/" :class="transparent ? 'text-white hover:text-yellow-300 transition-colors' : 'text-white hover:text-yellow-400 transition-colors'">
             Bennes
           </NuxtLink>
-          <a href="https://terrassement.td-locationbenne37.fr" target="_blank" rel="noopener noreferrer" :class="transparent ? 'text-white hover:text-yellow-300 transition-colors' : 'text-white hover:text-yellow-400 transition-colors'">
+          <a href="https://tdterrassement37.fr/" target="_blank" rel="noopener noreferrer" :class="transparent ? 'text-white hover:text-yellow-300 transition-colors' : 'text-white hover:text-yellow-400 transition-colors'">
             Terrassement
           </a>
           <UDropdownMenu :items="cityDropdownItems">
@@ -75,7 +75,7 @@ const isMenuOpen = ref(false)
 const navigationItems = [
   { label: 'Accueil', to: '/' },
   { label: 'Services', to: '/#services' },
-  { label: 'Terrassement', to: 'https://terrassement.td-locationbenne37.fr', target: '_blank' },
+  { label: 'Terrassement', to: 'https://tdterrassement37.fr/', target: '_blank' },
   { label: 'Villes', to: '/villes' },
   { label: 'FAQ', to: '/#faq' },
   { label: 'Devis', to: '/#quote-form' }
