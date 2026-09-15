@@ -82,7 +82,7 @@
                 </p>
               </div>
               <div class="flex-shrink-0">
-                <a href="https://terrassement.td-locationbenne37.fr" target="_blank" rel="noopener noreferrer">
+                <a href="https://tdterrassement37.fr/" target="_blank" rel="noopener noreferrer">
                   <UButton
                       size="lg"
                       color="white"
